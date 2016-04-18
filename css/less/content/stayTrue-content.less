@@ -1,0 +1,682 @@
+// Content Sections
+
+// Header---------------------
+.stayTrue-header{
+  position:relative;
+  display:block;
+  background: url("../images/stayTrue-header.jpg");
+  height:42vw;
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  overflow:hidden;
+
+  &:before{
+    display:block;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background:@stayTrue-aqua;
+    opacity:.5;
+    height:42vw;
+    z-index:20;
+  }//Before Overlay
+
+  .stay-true-logo{
+    width:95%;
+    margin:0 auto;
+    display:block;
+  }
+}//stayTrue-header
+
+//Title Partial---------------
+.stayTrue-title{
+  text-transform:uppercase;
+  width:100%;
+  position:relative;
+  margin:15px 0;
+  letter-spacing:2px;
+
+  .title-small{
+    font-size:30px;
+    position:relative;
+    left:0;
+    display:block;
+    width:70%;
+    text-align:left;
+  }//title-small
+
+  .title-large{
+    font-size:65px;
+    display:block;
+    width:100%;
+    text-align: center;
+    position:relative;
+    max-width:675px;
+    margin:5px 0 35px 0;
+
+    @media @md, @lg{
+      width:70%;
+      left:19%;
+      text-align:left;
+      margin:5px 0;
+    }
+
+  }//title-large
+
+  .title-large-white{
+    font-size:65px;
+    display:block;
+    width:70%;
+    color:white;
+    position:relative;
+    text-align:left;
+    max-width:675px;
+    margin:5px 0;
+  }//title-large
+
+  .title-large-bkg{
+
+    display:block;
+    width:70%;
+    left:0;
+    padding:2px 10px 0 0;
+    position:relative;
+    text-align:right;
+    background:@stayTrue-aqua;
+    max-width:675px;
+    margin:5px 0;
+    font-size: 30px;
+    line-height: 35px;
+
+    @media @lg, @md{
+      left: 9%;
+      font-size: auto;
+      line-height: 62px;
+      font-size:65px;
+    }
+  }//title-large-bkg
+}//stayTrue-Title
+
+
+//StayTrue About --------------
+.stayTrue-about{
+  position:relative;
+  display:block;
+  // background:url("../images/stay_true_ship.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: 32%;
+  background-position-y: 55%;
+  padding-bottom: 70px;
+
+  @media @lg, @md{
+    background:url("../images/stay_true_ship.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: 32%;
+    background-position-y: 55%;
+    padding-bottom: 70px;
+  }
+
+  @media @md{
+    background-size: 30%;
+  }
+  h4{
+    position: relative;
+    display: block;
+    background: rgba(15, 186, 188, 0.49);
+    font-size: 27px;
+    color: white;
+    padding: 10px 30px;
+    width: 75%;
+    /* min-width: 510px; */
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-shadow:1px 2px 2px rgba(0,0,0,0.08);
+    line-height:40px;
+
+    @media @md, @lg{
+      width: 61%;
+    }
+  }//h4
+  p{
+    padding-left:0;
+    margin:20px 0;
+
+    @media @lg, @md{
+      padding-left:42%;
+    }
+  }
+}//stayTrue-about
+
+
+
+// Introduction Section
+.stayTrue-intro{
+  position:relative;
+  display:block;
+
+  p{
+    padding-left: 0;
+
+    @media @lg, @md{
+      padding-left: 20%;
+    }
+  }
+
+  .stayTrue-shopPic{
+    width:100%;
+    margin:60px 0 0 0;
+    padding:20px 0;
+    height:70vh;
+    position:relative;
+    background:url("../images/stayTrue-shop.JPG");
+    background-position-x: center;
+    background-position-y: center;
+    background-size:cover;
+    overflow:hidden;
+
+    @media @sm{
+      height: 90vh;
+    }
+    @media @lg, @md{
+      height:120vh;
+    }
+    h4{
+      position:relative;
+      text-transform:uppercase;
+      top:40vh;
+      width:95%;
+      line-height:35px;
+      margin:auto auto;
+      text-align:center;
+
+
+      @media @sm{
+        top: 50vh;
+        width:80%;
+      }
+      @media @lg, @md{
+        top:630px;
+        width:80%;
+      }
+
+    }
+  }//stayTrue-shopPic
+}//stayTrue-intro
+
+.stayTrue-latest-banner{
+  display:block;
+  position:relative;
+  background:@stayTrue-aqua;
+
+  .banner-container{
+    width:78%;
+    margin:0 auto;
+    flex-wrap: wrap;
+    @media @lg, @md, @sm{
+      flex-wrap: nowrap;
+    }
+  }
+
+  .latest-work-banner{
+    color:black;
+    text-align:center;
+    width:100%;
+    text-transform:uppercase;
+    font-size:30px;
+    margin-bottom: 10px;
+    @media @lg, @md, @sm{
+      width:68%;
+      text-align:left;
+      margin-bottom: 0;
+    }
+  }//latest-work-banner
+
+  .latest-banner-social{
+    width:46%;
+    position:relative;
+    margin: 0 auto;
+    @media @lg, @md, @sm{
+      width:26%;
+      margin: 0;
+    }
+  }//latest-banner-social
+}//stay-true-latest
+
+.stayTrue-staff{
+  position:relative;
+  display:block;
+  background:url("../images/GrungeBackground.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  overflow:hidden;
+
+  .stayTrue-artists-shelf{
+    width:100%;
+    padding:20px 0;
+    position:relative;
+    display:block;
+    text-align:center;
+    @media @md{
+      width:90%;
+      margin: 0 auto;
+    }
+    @media @lg{
+      text-align: left;
+    }
+    @media @sm, @xs{
+      text-align:center;
+    }
+  }//artist-shelf
+
+  .stayTrue-artists{
+    display:inline-block;
+    position:relative;
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    margin: 20px auto;
+    .rounded(50%);
+    @media @lg{
+      margin:0 40px;
+    }
+    @media @md{
+      margin: 0 7%;
+    }
+    @media @sm, @xs{
+      margin: 20px auto;
+    }
+  }//artists
+
+  .artist-info{
+    position:relative;
+    top:60%;
+    right:-30%;
+    //.translate(0,50%,0);
+    display:block;
+    width:200px;
+    color:white;
+    padding:12px;
+    .transition(.3s);
+    @media @lg, @md{
+      right:-50%;
+    }
+
+    h5{
+      text-transform:uppercase;
+      letter-spacing: 1px;
+      font-size: 22px;
+    }
+    span{
+      font-family:@standard-font;
+    }
+  }
+}//stayTrue-staff
+
+//Artists -------------
+.blue-rich{
+  background:url("../images/artistRich.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  border:8px solid @rich;
+  .transition(.3s);
+
+  .artist-info{
+    background-color:@rich;
+  }
+
+  &:hover, &:active, &:focus{
+    border:8px solid @rich;
+    .transition(.3s);
+
+    .artist-info{
+      background:darken(@rich,15%);
+      .transition(.3s);
+    }
+  }
+}//blue-rich
+
+
+.yellow-jay{
+  background:url("../images/artistJay.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  border:8px solid @jay;
+  .transition(.3s);
+
+  .artist-info{
+    background-color:@jay;
+  }
+
+  &:hover, &:active, &:focus{
+    border:8px solid @jay;
+    .transition(.3s);
+
+    .artist-info{
+      background:darken(@jay,15%);
+      .transition(.3s);
+    }
+  }
+}//yellow-jay
+
+.aqua-kate{
+  background:url("../images/artistKate.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  border:8px solid @kate;
+  .transition(.3s);
+
+  .artist-info{
+    background-color:@kate;
+  }
+
+  &:hover, &:active, &:focus{
+    border:8px solid @kate;
+    .transition(.3s);
+
+    .artist-info{
+      background:darken(@kate,15%);
+      .transition(.3s);
+    }
+  }
+}//aqua-kate
+
+.orange-placeholder{
+  background:url("../images/artistMatt.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  border:8px solid @place;
+  .transition(.3s);
+
+  .artist-info{
+    background-color:@place;
+  }
+
+  &:hover, &:active, &:focus{
+    border:8px solid @place;
+    .transition(.3s);
+
+    .artist-info{
+      background:darken(@place,15%);
+      .transition(.3s);
+    }
+  }
+}//0fb6b8
+
+//SHELF PADDING -------s-----
+.shelf-pad{
+  padding: 0!important;
+  @media @lg{
+    padding:20px 0 20px 15% !important;
+  }
+  @media @md, @sm, @xs{
+    padding: 0!important;
+  }
+}
+
+//Artist Page Portfolio
+.stayTrue-staff-portfolio{
+  position:relative;
+  display:block;
+  background:url("../images/GrungeBackground.png");
+  background-position-x: center;
+  background-position-y: top;
+  background-size:cover;
+  overflow:hidden;
+  background-attachment:fixed;
+  min-height:100vh;
+}
+
+
+// Footer -----------------------------
+.stayTrue-footer{
+  background:@stayTrue-aqua;
+
+  .footer-info{
+    width:100%;
+    position:relative;
+    color:@white;
+    @media @lg, @md{
+      width: 48%;
+    }
+    p{
+      font-size:16px; line-height:15px; margin:10px 0 0 0;
+      span{
+        background: black;
+        width: auto;
+        padding: 6px;
+        margin-top: 2px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .address{
+    width:100%;
+
+    @media @lg, @md{
+      width:40%;
+    }
+  }
+
+  h4{
+    text-transform:uppercase;
+    font-family:@heading-font;
+    font-size:31px;
+  }
+
+  .logo-nav-phone{
+    font-family:@heading-font;
+    font-size: 25px;
+    letter-spacing: 2.0px;
+    font-weight: 100;
+    display: block;
+    margin-top: 5px;
+  }//.logo-nav-phone
+
+  .footer-info-address a{
+    color:@white;
+    font-size:12px;
+
+    span{
+      background: black;
+      width: auto;
+      padding: 6px;
+      margin-top: 2px;
+      display: inline-block;
+    }
+  }
+
+  .footer-info-social{
+    width:40%;
+    height:40px;
+  }
+
+  .footer-nav{
+    width:100%;
+    position:relative;
+    color:@white;
+    text-align:right;
+    display: none;
+
+    @media @lg, @md{
+      display: flex;
+    }
+
+    .extra-menu{
+      max-width:80px;
+
+    }
+
+    .footer-nav-link{
+      display:inline-block;
+      color:@white;
+      font-family:@heading-font;
+      margin:0 15px;
+      font-weight:600;
+
+    }
+    .footer-nav-link-small{
+      font-family:@standard-font;
+      font-size:14px;
+      color:@white;
+      width:100%;
+      display:block;
+      margin:15px 0;
+    }
+  }
+}
+
+// Artist's page
+.artist-header{
+  height:55vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+    background-position: center;
+  @media @lg{
+      background-position: center bottom;
+  }
+
+}
+
+.artist-intro-bio{
+  p{
+    font-size:12px;
+    line-height:19px;
+  }
+  .artist-intro-left{
+    width:100%;
+    position:relative;
+    float:none;
+    text-align:center;
+    height: 220px;
+    @media @lg, @md, @sm{
+      width:36%;
+      position:relative;
+      float:left;
+      height: auto;
+    }
+  }
+  .artist-intro-right{
+    width:100%;
+    padding-left:0;
+    position:relative;
+    float:none;
+    text-align: center;
+
+    @media @lg, @md, @sm{
+      width:64%;
+      padding-left:15px;
+      position:relative;
+      float:right;
+      text-align: left;
+    }
+
+    @media @sm{
+      width: 55%;
+    }
+  }
+  .artist-intro-pic{
+    display:inline-block;
+    position:relative;
+    top:-100px;
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    margin:0 40px;
+    .rounded(50%);
+  }
+
+  h4{
+    text-transform:uppercase;
+  }
+  h2{
+    position:relative;
+    color:@white;
+    padding:10px 15px;
+    display:inline-block;
+    letter-spacing:8px;
+    margin-top:15px;
+  }
+}
+
+// Text For Portfolios
+.rich-text{
+  background:@rich;
+  left:0;
+
+  @media @lg, @md, @sm{
+    left:-100px;
+  }
+}
+.kate-text{
+  background:@kate;
+  left:0;
+
+  @media @lg, @md, @sm{
+    left:-100px;
+  }
+}
+.jay-text{
+  background:@jay;
+  left:0;
+
+  @media @lg, @md, @sm{
+    left:-100px;
+  }
+}
+.matt-text{
+  background:@place;
+  left:0;
+
+  @media @lg, @md, @sm{
+    left:-100px;
+  }
+}
+
+//Portfolio Images
+.artist-portfolio-inner{
+  position:relative;
+  display:block;
+  background:url("../images/GrungeBackground.png");
+  background-position-x: center;
+  background-position-y: top;
+  background-size:cover;
+  overflow:hidden;
+  background-attachment:fixed;
+}
+
+.main-gallery-item{
+  width:100%;
+  margin:10px 0;
+  height:40vh;
+  background-position:50% 50%;
+  background-size:cover;
+  .transition(.3s);
+
+  @media @md, @lg, @sm{
+    height:40vh;
+    width:32%;
+  }
+  @media @sm, @xs{width:48%; height: 30vh;}
+  &:hover{
+    .scale(1.03);
+  }
+}
+
+//
+//Lucas
+//access_token=222176498.beaa51c.c2816b79ca374e8c91f0d540541f6051
+
+//Becky
+//211925771.beaa51c.7311f9a97a8e4824a140b80b79c5039d

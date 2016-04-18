@@ -1,0 +1,97 @@
+
+
+// Variables
+
+//Responsive Variables
+
+//!!!This section was extracted from Bootstrap variables - [START] -!!!
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//Fonts
+@standard-font: 'Roboto Slab', serif;
+@standard-heading-weight: 800;
+@heading-font: 'Roboto', sans-serif;
+@standard-weight: 400;
+@standard-color: inherit;
+
+//** Unit-less `line-height` for use in components like buttons.
+@font-size-base:          18px;
+@line-height-base:        1.0; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@computed-line-height:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//base font sizes
+
+@font-size-large:         ceil((@font-size-base * 1.25));     // ~22px
+@font-size-small:         ceil((@font-size-base * 0.66667));  // ~12px
+@font-size-h1:            floor((@font-size-base * 3.0));     // ~54px
+@font-size-h2:            floor((@font-size-base * 2.6667));  // ~48px
+@font-size-h3:            ceil((@font-size-base * 2));        // ~36px
+@font-size-h4:            ceil((@font-size-base * 1.25));     // ~22px
+@font-size-h5:            @font-size-base;                    // ~18px
+@font-size-h6:            ceil((@font-size-base * 0.66667));  // ~12px
+//!!!This section was extracted from Bootstrap variables - [END] -!!!
+
+
+//Colours
+@black: #000000;
+@white: #ffffff;
+@stayTrue-aqua: #0fbabc;
+@stayTrue-blue: #2882c2;
+@stayTrue-Yellow: #e3a329;
+@stayTrue-orange: #e36629;
+@text-color: @black;
+@body-bg: #dcddde;
+
+//Borders
+
+//Type colors:
+@grey-extra-light:#c3c3c3;
+@grey-light:#aba8a8;
+
+//Social Colours
+@facebook:#3b5998;
+@twitter:#56a3d9;
+@googlePlus:#dd4b39;
+@pinterest:#cb211d;
+@email:#5d5d5d;
+@whatsApp:#34af23;
+@instagram:#3f729b;
+@rich:#2882c2;
+@jay:#e3a329;
+@kate:#0fb6b8;
+@place:#e36629;

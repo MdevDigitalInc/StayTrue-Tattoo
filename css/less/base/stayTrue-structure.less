@@ -1,0 +1,62 @@
+
+//
+//---------------------------------------------------
+//Base Structure - Wrappers and the such
+//-----------------------------------------------------//
+//In this file you will find the CSS controling the basic building blocks of the site
+//only in terms of structural div's and their respective media queries.
+
+//Global things!
+body {
+  font-family: @standard-font;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+  z-index:1;
+}
+
+//
+// Wrappers
+//------------------------------------------------
+
+.stayTrue-wrapper{
+  margin:0 auto;
+  position:relative;
+  padding:0;
+  width:95%;
+  z-index:30;
+
+  @media @xs{
+    min-width:300px !important;
+    max-width:650px !important;
+  }//Mobile
+
+  @media @sm{
+    min-width:480px !important;
+    max-width:768px !important;
+  }//Tablet
+
+  @media @md{
+    min-width:768px !important;
+    max-width:960px !important;
+  }//laptop
+
+  @media @lg{
+    min-width:768px !important;
+    max-width:1000px !important;
+  }//desktop
+}//Avarage Wrapper
+
+//
+// Content Sections
+//---------------------------------------------------
+.cnt-section{
+  width:100%;
+  position:relative;
+  z-index:10;
+  padding:40px 0;
+}//cnt-section
+
+
+
