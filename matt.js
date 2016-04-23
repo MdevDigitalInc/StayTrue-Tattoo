@@ -6,7 +6,7 @@ $(function() {
 
 $( window ).load(function() {
     // Generate Gallery -----------------------------
-    generateGallery(24);
+    // generateGallery(24);
     generateGalleryBG(24);
     generateGalleryCoverups(24);
     generateGalleryColor(24);
