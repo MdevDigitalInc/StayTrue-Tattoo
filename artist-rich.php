@@ -123,7 +123,7 @@
                       <span>N5P 1E4</span></p>
                   <a href="mailto:stay.truetattoo@hotmail.com"><span>stay.truetattoo@hotmail.com</span></a>
               </div>
-                <div class="footer-info-social flex flex-end flex-between">
+                <div class="footer-info-social flex flex-start flex-between">
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/Stay-True-Tattoo-151235461581863/" target="_blank" class="round-btn facebook">
                         <i class="fa fa-fw fa-facebook"></i>
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="footer-info">
-                <div class="footer-nav flex flex-start">
+                <div class="footer-nav flex flex-end">
                     <a class="footer-nav-link" href="#" title="link">HOME</a>
                     <a class="footer-nav-link" href="#about_us" title="link">ABOUT</a>
                     <span class="footer-nav-link extra-menu" href="#artists_page" title="link">
