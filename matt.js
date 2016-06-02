@@ -16,7 +16,7 @@ $( window ).load(function() {
 function generateGallery(images){
 
     //Dir where these will be kept
-    var dir = "/matt";
+    var dir = "/matt/";
     //Define Type of file
     var fileType = ".jpg";
     //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"
@@ -37,7 +37,7 @@ function generateGallery(images){
 function generateGalleryBG(images){
 
     //Dir where these will be kept
-    var dir = "/matt/bg";
+    var dir = "/matt/bg/";
     //Define Type of file
     var fileType = ".jpg";
     //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"
@@ -58,7 +58,7 @@ function generateGalleryBG(images){
 function generateGalleryCoverups(images){
 
     //Dir where these will be kept
-    var dir = "/matt/coverups";
+    var dir = "/matt/coverups/";
     //Define Type of file
     var fileType = ".jpg";
     //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"
@@ -79,7 +79,7 @@ function generateGalleryCoverups(images){
 function generateGalleryColor(images){
 
     //Dir where these will be kept
-    var dir = "/matt/tattoocolor";
+    var dir = "/matt/tattoocolor/";
     //Define Type of file
     var fileType = ".jpg";
     //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"

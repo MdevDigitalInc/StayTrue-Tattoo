@@ -13,7 +13,7 @@ $( window ).load(function() {
 function generateGallery(images){
 
     //Dir where these will be kept
-    var dir = "/rich";
+    var dir = "/rich/";
     //Define Type of file
     var fileType = ".jpg";
     //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"

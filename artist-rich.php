@@ -11,14 +11,14 @@
         <meta property="og:url"             content="http://www.staytrue-tattoo.com/" />
         <meta property="og:title"           content="Stay True Tattoo | St. Thomas | P:519-631-3111" />
         <meta property="og:description"     content="Stay True Tattoo located in St. Thomas, Ontario, just outside London, Ontario, owner Rich Lambe. Specializing in custom tattoos, black & white or color & coverups." />
-        <meta property="og:image"           content="http://www.staytrue-tattoo.com/facebookOpenGraph.jpg" />
+        <meta property="og:image"           content="http://www.staytrue-tattoo.com/openGraph.jpg" />
         <!-- [ TWITTER CARDS ] -->
         <meta name="twitter:card"           content="summary_large_image">
         <meta name="twitter:site"           content="@StayTrueON">
         <meta name="twitter:creator"        content="@StayTrueON">
         <meta name="twitter:title"          content="Stay True Tattoo | St. Thomas | P:519-631-3111">
         <meta name="twitter:description"    content="Stay True Tattoo located in St. Thomas, Ontario, just outside London, Ontario, owner Rich Lambe. Specializing in custom tattoos, black & white or color & coverups.">
-        <meta name="twitter:image"          content="http://www.staytrue-tattoo.com/twitterSummaryCard.jpg">
+        <meta name="twitter:image"          content="http://www.staytrue-tattoo.com/twitterCard.jpg">
     <!-- Icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -98,7 +98,7 @@
             	return $insta_array;
             }
             //Supply a username
-            $my_account = 'staytruetattoos';
+            $my_account = 'rich.tattoos';
             //Do the deed
             $results_array = scrape_insta($my_account);
              for($cnt=0; $cnt < 12; $cnt++)
