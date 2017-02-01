@@ -62,7 +62,7 @@
                 <a href="index.html" title="Home">Home</a>
                 <a href="index.html#about_us" title="About Us">About</a>
                 <a href="index.html#artists_page" title="Artists">Artists</a>
-                <a href="mailto:stay.truetatto@hotmail.com" title="Contact Us">Contact</a>
+                <a href="mailto:stay.truetattoo@hotmail.com" title="Contact Us">Contact</a>
             </div>
         </div>
     </nav>
@@ -145,7 +145,6 @@
                     <span class="footer-nav-link extra-menu" href="#artists_page" title="link">
                         ARTIST
                         <a class="footer-nav-link-small" href="artist-rich.php" title="link">Rich</a>
-                        <a class="footer-nav-link-small" href="artist-jay.php" title="link">Jay</a>
                         <a class="footer-nav-link-small" href="artist-kate.html" title="link">Kate</a>
                         <a class="footer-nav-link-small" href="artist-matt.html" title="link">Matt</a>
                     </span>
