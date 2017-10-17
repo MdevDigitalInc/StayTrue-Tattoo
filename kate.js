@@ -1,6 +1,6 @@
 $( window ).load(function() {
   $(".main-gallery-item").fancybox();
-  console.log('FUCK');
+
   generateGallery();
 });
 
