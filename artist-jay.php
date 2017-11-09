@@ -146,7 +146,7 @@
                         ARTIST
                         <a class="footer-nav-link-small" href="artist-rich.php" title="link">Rich</a>
                         <a class="footer-nav-link-small" href="artist-jay.php" title="link">Jay</a>
-                        <a class="footer-nav-link-small" href="artist-kate.html" title="link">Kate</a>
+                        <a class="footer-nav-link-small" href="artist-kate.html" title="link">Keight</a>
                         <a class="footer-nav-link-small" href="artist-matt.html" title="link">Matt</a>
                     </span>
                 </div>
