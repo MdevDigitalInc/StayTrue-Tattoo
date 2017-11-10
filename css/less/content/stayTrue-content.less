@@ -168,6 +168,24 @@
       padding-left: 20%;
     }
   }
+  
+  .desktop-banner {
+    @media @sm, @xs {
+      display: none;
+    }
+  }
+  
+  .mobile-banner {
+    
+    h4 {
+      background: rgba(40, 130, 194, 0.8);
+      padding: 10px;
+    }
+    
+    @media @lg, @md {
+      display: none;
+    }
+  }
 
   .stayTrue-shopPic{
     width:100%;
@@ -202,8 +220,8 @@
       }
 
 
-      @media @sm{
-        top: 40vh;
+      @media @sm, @xs{
+        top: 10vh;
         width:80%;
       }
       @media @lg, @md{
@@ -531,6 +549,19 @@
       display:block;
       margin:15px 0;
     }
+  }
+}
+
+.copyright {
+  background: #000;
+  padding: 3px;
+  
+  p {
+    font-size: 13px;
+    font-family: @heading-font;
+    color: #fff;
+    text-align: center;
+    margin: 0;
   }
 }
 

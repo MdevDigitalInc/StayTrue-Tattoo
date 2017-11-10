@@ -228,7 +228,7 @@ a img {
 .flex-responsive-nowrap {
   flex-wrap: wrap;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .flex-responsive-nowrap {
     flex-wrap: wrap;
   }
@@ -261,7 +261,7 @@ a img {
 .dev-square i {
   padding: 5px 8px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .dev-square {
     background-color: lightgoldenrodyellow;
   }
@@ -430,7 +430,7 @@ td.visible-lg {
 .f-left {
   float: none !important;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .f-left {
     float: none !important;
   }
@@ -453,7 +453,7 @@ td.visible-lg {
 .f-right {
   float: none !important;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .f-right {
     float: none !important;
   }
@@ -511,7 +511,7 @@ td.visible-lg {
 .show-desk {
   display: none;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .show-desk {
     display: none;
   }
@@ -534,7 +534,7 @@ td.visible-lg {
 .show-mob {
   display: inline-block;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .show-mob {
     display: inline-block;
   }
@@ -563,7 +563,7 @@ td.visible-lg {
 .hide-mob {
   display: none;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .hide-mob {
     display: block;
   }
@@ -617,7 +617,7 @@ body {
   width: 95%;
   z-index: 30;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .stayTrue-wrapper {
     min-width: 300px !important;
     max-width: 650px !important;
@@ -703,7 +703,7 @@ h1,
   font-size: 29px;
   line-height: 32px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h1,
   .h1 {
     font-size: 44px;
@@ -735,7 +735,7 @@ h2,
 .h2 {
   font-size: 30px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h2,
   .h2 {
     font-size: 38px;
@@ -763,7 +763,7 @@ h3,
 .h3 {
   font-size: 18px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h3,
   .h3 {
     font-size: 26px;
@@ -791,7 +791,7 @@ h4,
 .h4 {
   font-size: 15px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h4,
   .h4 {
     font-size: 25px;
@@ -819,7 +819,7 @@ h5,
 .h5 {
   font-size: 8px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h5,
   .h5 {
     font-size: 8px;
@@ -847,7 +847,7 @@ h6,
 .h6 {
   font-size: 3px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   h6,
   .h6 {
     font-size: 3px;
@@ -876,7 +876,7 @@ p {
   font-weight: 400;
   line-height: 23px;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   p {
     font-size: 16px;
     line-height: 28px;
@@ -1275,6 +1275,20 @@ a:active {
     padding-left: 20%;
   }
 }
+@media (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
+  .stayTrue-intro .desktop-banner {
+    display: none;
+  }
+}
+.stayTrue-intro .mobile-banner h4 {
+  background: rgba(40, 130, 194, 0.8);
+  padding: 10px;
+}
+@media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
+  .stayTrue-intro .mobile-banner {
+    display: none;
+  }
+}
 .stayTrue-intro .stayTrue-shopPic {
   width: 100%;
   margin: 60px 0 0 0;
@@ -1310,9 +1324,9 @@ a:active {
   background: rgba(40, 130, 194, 0.8);
   padding: 10px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
   .stayTrue-intro .stayTrue-shopPic h4 {
-    top: 40vh;
+    top: 10vh;
     width: 80%;
   }
 }
@@ -1389,7 +1403,7 @@ a:active {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 991px), (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
   .stayTrue-staff .stayTrue-artists-shelf {
     text-align: center;
   }
@@ -1567,7 +1581,7 @@ a:active {
     padding: 20px 0 20px 15% !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px), (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
   .shelf-pad {
     padding: 0!important;
   }
@@ -1673,6 +1687,17 @@ a:active {
   width: 100%;
   display: block;
   margin: 15px 0;
+}
+.copyright {
+  background: #000;
+  padding: 3px;
+}
+.copyright p {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
 }
 .artist-header {
   height: 55vh;
@@ -1811,7 +1836,7 @@ a:active {
     width: 32%;
   }
 }
-@media (min-width: 768px) and (max-width: 991px), (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
   .main-gallery-item {
     width: 48%;
     height: 30vh;
