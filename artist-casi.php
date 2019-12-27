@@ -67,50 +67,30 @@
         </div>
     </nav>
     <!-- Header Section -->
-    <section class="cnt-section artist-header" style="background-image:url('./images/stayTrue-header.jpg');">
+    <section class="cnt-section artist-header" style="background-image:url('./images/casi-header.png');">
     </section>
 
     <!-- Artist's Intro -->
     <section class="cnt-section artist-intro-bio">
         <div class="stayTrue-wrapper clearfix">
            <div class="artist-intro-left">
-               <div class="artist-intro-pic blue-rich"></div>
+               <div class="artist-intro-pic purple-casi"></div>
            </div>
            <div class="artist-intro-right">
-                <h4>Tattoo Artist & Shop Owner</h4>
-                <h2 class="rich-text">RICH</h2>
-                <p>Back in the summer of '78, Richard was a fine young lad learning to develop his art skills by drawing portraits of his family on the walls of his home. By grade one, his art skills had advanced far enough to draw himself as a giant protecting his family from a wolf pack. By grade 6 he was still a skinny little nerd, forced to do other kids' art projects (or risk getting beat up.) He spent his hazy teenage years drawing dragons and various other mythical creatures, drawing comic books for his friends, and skateboarding. </p>
-               <p>He started tattooing at the tender young age of 17, not knowing a thing about it. He spent the next 6 years not knowing he would become a tattoo artist, just enjoying the art. Twelve years ago, Bonnie at Lucky Devil Tattoo in London, ON gave him a chance, and it was during that time he truly fell in love with tattooing. Rich's influences include - but are not limited to - Sailor Jerry Swallow, Mike Austin, Jay Hess and Derek Lewis Ghost Rider. Rich loves to do old school traditional and realism, but loves the art of tattooing in general and does not limit himself to one style. He has now been tattooing for 16 years and will keep going until his hands fall off. </p>
+                <h4>Stay True Office Manager & Owner of Clean Slate Laser Studio </h4>
+                <h2 class="casi-text">CASI</h2>
+                <p>At the centre of our shop is Casi, she is the brains of the operations and she runs a tight ship! Her extensive history in Food Services has translated perfectly to Tattoo industry; meticulous about cleanliness, scheduling and communications, she keeps us on track while always being friendly and compassionate about the needs of our clients. From bashful newcomers to heavily decorated veterans, Casi’s sympathetic ear and friendly smile calms nerves while discussing exciting plans for future pieces.</p>
+             
+               <p>Ever-organized and thorough, she also makes sure that we stay on top of our appointments and upcoming events while making sure our ship stays on course and afloat. As well, her attention to detail ensures that our clients can always expect a clean and tidy environment.</p>
+             
+             <p>Casi is an essential part of the Stay True family, and she has recently begun to expand her own business that goes hand-in-hand with the Tattoo industry. She has completed her training in Advanced Medical Aesthetics and Laser Technician program with an additional certification in Laser Tattoo Removal. She is now offering various services to help people "<a href="http://cleanslatelaserstudio.com" target="_blank" style="font-size: inherit; color: #8c72b3">Clean the Slate</a>".</p>
+             <a href="http://cleanslatelaserstudio.com" target="_blank" ><img src="images/CSL-logo.png" alt="Clean Slate Laser Studio" /></a>
            </div>
         </div>
     </section>
 
     <!-- Artist's Pics -->
-    <section class="cnt-section artist-portfolio-inner">
-        <div class="stayTrue-wrapper main-gallery flex flex-start flex-wrap flex-between">
-            <?php
-            //returns a big old hunk of JSON from a non-private IG account page.
-            function scrape_insta($username) {
-            	$insta_source = file_get_contents('http://instagram.com/'.$username);
-            	$shards = explode('window._sharedData = ', $insta_source);
-            	$insta_json = explode(';</script>', $shards[1]);
-            	$insta_array = json_decode($insta_json[0], TRUE);
-            	return $insta_array;
-            }
-            //Supply a username
-            $my_account = 'rich.tattoos';
-            //Do the deed
-            $results_array = scrape_insta($my_account);
-             for($cnt=0; $cnt < 12; $cnt++)
-            {
-             $latest_array = $results_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'][$cnt];
-             echo '<a class="main-gallery-item" target="_blank" href="http://instagram.com/p/'.$latest_array['code'].'" style="background-image:url('.$latest_array['display_src'].');"></a>';
-            }
-            ?>
-
-        </div>
-        <div class="stayTrue-wrapper main-gallery-2 flex flex-start flex-wrap flex-between"></div>
-    </section>
+    
     <!-- Footer -->
     <footer class="cnt-section stayTrue-footer">
         <div class="stayTrue-wrapper flex flex-start flex-wrap flex-between">
@@ -147,7 +127,7 @@
                         <a class="footer-nav-link-small" href="artist-rich.php" title="link">Rich</a>
                         <a class="footer-nav-link-small" href="artist-kate.html" title="link">Keight</a>
                         <a class="footer-nav-link-small" href="artist-matt.html" title="link">Matt</a>
-                        <a class="footer-nav-link-small" href="artist-casi.php" title="link">Casi</a>
+                      <a class="footer-nav-link-small" href="artist-casi.php" title="link">Casi</a>
                     </span>
                 </div>
             </div>

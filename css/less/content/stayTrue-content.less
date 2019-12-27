@@ -263,38 +263,70 @@
   overflow:hidden;
 
   .stayTrue-artists-shelf{
+    flex-direction: column;
+    display: block;
+    margin: inherit auto;
     width:100%;
     padding:20px 0;
     position:relative;
-    display:block;
     text-align:center;
-    @media @md{
+    
+    @media @md, @sm{
       width:90%;
       margin: 0 auto;
     }
     @media @lg{
       text-align: center;
     }
-    @media @sm, @xs{
-      text-align:center;
+    @media @xs{
+      flex-direction: column;
+      display: block;
+      margin: inherit auto;
     }
   }//artist-shelf
+  
+  .top-shelf {
+    padding-bottom: 0;
+    
+    @media @lg, @md {
+      a:first-child {
+        margin-right: 50px;
+      }
+    }
+  }
+  
+  .bottom-shelf {
+    padding-top: 0;
+    
+    @media @lg, @md {
+      a:first-child {
+        margin-left: 100px;
+        margin-right: 50px;
+      }
+    }
+  }
 
   .stayTrue-artists{
     display:inline-block;
     position:relative;
-    width:300px;
-    height:300px;
+    width:380px;
+    height:380px;
     overflow:hidden;
     margin: 20px 8px;
     .rounded(50%);
+    
+    @media @sm{
+      width: 350px;
+      height: 350px;
+    }
 
   }//artists
 
   .artist-info{
     position:relative;
+    text-align: left;
     top:60%;
-    right:-30%;
+    right:-50%;
     //.translate(0,50%,0);
     display:block;
     width:200px;
@@ -302,7 +334,7 @@
     padding:12px;
     .transition(.3s);
     @media @lg, @md{
-      right:-40%;
+      right:-50%;
     }
 
     h5{
@@ -340,6 +372,28 @@
   }
 }//blue-rich
 
+.purple-casi{
+  background:url("../images/artistCasi.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  border:8px solid @casi;
+  .transition(.3s);
+
+  .artist-info{
+    background-color:@casi;
+  }
+
+  &:hover, &:active, &:focus{
+    border:8px solid @casi;
+    .transition(.3s);
+
+    .artist-info{
+      background:darken(@casi,15%);
+      .transition(.3s);
+    }
+  }
+}//purple-casi
 
 .yellow-jay{
   background:url("../images/artistJay.jpg");
@@ -610,6 +664,15 @@
 // Text For Portfolios
 .rich-text{
   background:@rich;
+  left:0;
+
+  @media @lg, @md, @sm{
+    left:-100px;
+  }
+}
+
+.casi-text{
+  background:@casi;
   left:0;
 
   @media @lg, @md, @sm{

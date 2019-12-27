@@ -148,6 +148,7 @@
                         <a class="footer-nav-link-small" href="artist-jay.php" title="link">Jay</a>
                         <a class="footer-nav-link-small" href="artist-kate.html" title="link">Keight</a>
                         <a class="footer-nav-link-small" href="artist-matt.html" title="link">Matt</a>
+                        <a class="footer-nav-link-small" href="artist-casi.php" title="link">Casi</a>
                     </span>
                 </div>
             </div>

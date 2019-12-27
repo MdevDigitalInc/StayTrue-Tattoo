@@ -1020,7 +1020,7 @@ a:active {
   transition: all 0.3s ease-in-out;
 }
 .stayTrue-navigation .stayTrue-nav-links a:hover {
-  color: #0fbabc;
+  color: #2882c2;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1239,7 +1239,7 @@ a:active {
 .stayTrue-about h4 {
   position: relative;
   display: block;
-  background: rgba(15, 186, 188, 0.49);
+  background: rgba(40, 130, 194, 0.8);
   font-size: 27px;
   color: white;
   padding: 10px 30px;
@@ -1303,27 +1303,29 @@ a:active {
   text-transform: uppercase;
   top: 40vh;
   line-height: 35px;
-  margin: 5px auto;
+  margin: 20px auto;
   text-align: center;
-  background: #2882c2;
   letter-spacing: 2px;
-  width: auto;
+}
+.stayTrue-intro .stayTrue-shopPic h4 span {
+  background: rgba(40, 130, 194, 0.8);
+  padding: 10px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .stayTrue-intro .stayTrue-shopPic h4 {
-    top: 50vh;
+    top: 40vh;
     width: 80%;
   }
 }
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
   .stayTrue-intro .stayTrue-shopPic h4 {
-    top: 630px;
+    top: 570px;
   }
 }
 .stayTrue-latest-banner {
   display: block;
   position: relative;
-  background: #0fbabc;
+  background: #2882c2;
 }
 .stayTrue-latest-banner .banner-container {
   width: 78%;
@@ -1462,6 +1464,38 @@ a:active {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.purple-casi {
+  background: url("../images/artistCasi.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  border: 8px solid #8c72b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.purple-casi .artist-info {
+  background-color: #8c72b3;
+}
+.purple-casi:hover,
+.purple-casi:active,
+.purple-casi:focus {
+  border: 8px solid #8c72b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.purple-casi:hover .artist-info,
+.purple-casi:active .artist-info,
+.purple-casi:focus .artist-info {
+  background: #664c8d;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .yellow-jay {
   background: url("../images/artistJay.jpg");
   background-position-x: center;
@@ -1583,7 +1617,7 @@ a:active {
   min-height: 100vh;
 }
 .stayTrue-footer {
-  background: #0fbabc;
+  background: #2882c2;
 }
 .stayTrue-footer .footer-info {
   width: 100%;

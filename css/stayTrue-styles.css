@@ -1122,7 +1122,7 @@ a:active {
 .stayTrue-header {
   position: relative;
   display: block;
-  background: url("../images/STT_HERO_shopexterior_01.jpg");
+  background: url("../images/STT_HERO_shopexterior_01.png");
   height: 42vw;
   background-position-x: center;
   background-position-y: center;
@@ -1372,13 +1372,15 @@ a:active {
   overflow: hidden;
 }
 .stayTrue-staff .stayTrue-artists-shelf {
+  flex-direction: column;
+  display: block;
+  margin: inherit auto;
   width: 100%;
   padding: 20px 0;
   position: relative;
-  display: block;
   text-align: center;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px) {
   .stayTrue-staff .stayTrue-artists-shelf {
     width: 90%;
     margin: 0 auto;
@@ -1389,26 +1391,52 @@ a:active {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 991px), (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .stayTrue-staff .stayTrue-artists-shelf {
-    text-align: center;
+    flex-direction: column;
+    display: block;
+    margin: inherit auto;
+  }
+}
+.stayTrue-staff .top-shelf {
+  padding-bottom: 0;
+}
+@media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
+  .stayTrue-staff .top-shelf a:first-child {
+    margin-right: 50px;
+  }
+}
+.stayTrue-staff .bottom-shelf {
+  padding-top: 0;
+}
+@media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
+  .stayTrue-staff .bottom-shelf a:first-child {
+    margin-left: 100px;
+    margin-right: 50px;
   }
 }
 .stayTrue-staff .stayTrue-artists {
   display: inline-block;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
   overflow: hidden;
   margin: 20px 8px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .stayTrue-staff .stayTrue-artists {
+    width: 350px;
+    height: 350px;
+  }
+}
 .stayTrue-staff .artist-info {
   position: relative;
+  text-align: left;
   top: 60%;
-  right: -30%;
+  right: -50%;
   display: block;
   width: 200px;
   color: white;
@@ -1420,7 +1448,7 @@ a:active {
 }
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px) {
   .stayTrue-staff .artist-info {
-    right: -40%;
+    right: -50%;
   }
 }
 .stayTrue-staff .artist-info h5 {
@@ -1458,6 +1486,38 @@ a:active {
 .blue-rich:active .artist-info,
 .blue-rich:focus .artist-info {
   background: #1b5783;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.purple-casi {
+  background: url("../images/artistCasi.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  border: 8px solid #8c72b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.purple-casi .artist-info {
+  background-color: #8c72b3;
+}
+.purple-casi:hover,
+.purple-casi:active,
+.purple-casi:focus {
+  border: 8px solid #8c72b3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.purple-casi:hover .artist-info,
+.purple-casi:active .artist-info,
+.purple-casi:focus .artist-info {
+  background: #664c8d;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1754,6 +1814,15 @@ a:active {
 }
 @media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px) {
   .rich-text {
+    left: -100px;
+  }
+}
+.casi-text {
+  background: #8c72b3;
+  left: 0;
+}
+@media (min-width: 1200px), (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px) {
+  .casi-text {
     left: -100px;
   }
 }
